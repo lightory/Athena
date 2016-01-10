@@ -5,8 +5,34 @@ html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:1
 
 html,body { height:100%; }
 header { background:#DDD; }
-aside { background:#CCC; width:250px; height:100%; float:left; }
+aside { background:#CCC; width:150px; height:100%; float:left; }
 section { background:#BBB; height:100%; }
 
 
-header span#logo { display:inline-block; font-size:24px; padding:6px; }
+header span.logo { display:inline-block; font-size:24px; padding:6px; }
+
+
+aside div.user { 
+	border-bottom:1px solid #AAA; 
+	padding:6px 0; 
+	margin-bottom:10px; 
+}
+aside h3 { 
+	font-size:12px; color:#AAA; 
+	margin:4px 0 4px 10px; 
+}
+aside ul.menu { 
+	padding:0; 
+	margin-top:0; 
+}
+aside ul.menu li { 
+	font-size:14px; background:transparent url('img/icon_task.png') no-repeat 20px 50%;  
+	padding:6px 0 6px 20px;
+}
+aside ul.menu li.selected {
+	background-color:#BBB;
+}
+aside ul.menu li a { 
+	color:#000; text-decoration:none; 
+	margin-left:20px;
+}
